@@ -20,11 +20,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="generator_rna.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/generator_rna.py">
+      <file leaf-file-name="Genzen.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/Genzen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+            <state relative-caret-position="586">
+              <caret line="233" column="30" selection-start-line="233" selection-start-column="30" selection-end-line="233" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="t1_fwd_dna" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/t1_fwd_dna">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="t1_fwd_rna" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/t1_fwd_rna">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="t1_rev_dna" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/t1_rev_dna">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="t1_rev_rna" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/t1_rev_rna">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Labeler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/Labeler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pcsd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/pcsd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,7 +115,14 @@
         <option value="$PROJECT_DIR$/generator_rna.py" />
         <option value="$PROJECT_DIR$/../PureConceptSequencing/t" />
         <option value="$PROJECT_DIR$/../PureConceptSequencing/t1" />
+        <option value="$PROJECT_DIR$/../PureConceptSequencing/generator_dna.py" />
         <option value="$PROJECT_DIR$/../PureConceptSequencing/generator_rna.py" />
+        <option value="$PROJECT_DIR$/../PureConceptSequencing/generator_rna_dna.py" />
+        <option value="$PROJECT_DIR$/../PureConceptSequencing/generator_dna-rna.py" />
+        <option value="$PROJECT_DIR$/../PureConceptSequencing/genzen.py" />
+        <option value="$PROJECT_DIR$/../PureConceptSequencing/Labeler.py" />
+        <option value="$PROJECT_DIR$/../PureConceptSequencing/pcsd.py" />
+        <option value="$PROJECT_DIR$/../PureConceptSequencing/Genzen.py" />
       </list>
     </option>
   </component>
@@ -107,7 +184,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.generator_rna">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jeremy\PycharmProjects\PureConceptSequencing" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Genzen">
     <configuration default="false" name="generator_rna" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,7 +202,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PureConceptSequencing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PureConceptSequencing/generator_rna.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Jeremy\PycharmProjects\PureConceptSequencing\Genzen.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -138,6 +220,40 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PureConceptSequencing" />
       <option name="SCRIPT_NAME" value="C:/Python27/Lib/random.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="generator_dna-rna" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PureConceptSequencing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PureConceptSequencing" />
+      <option name="SCRIPT_NAME" value="C:\Users\Jeremy\PycharmProjects\PureConceptSequencing\Genzen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Genzen" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PureConceptSequencing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PureConceptSequencing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PureConceptSequencing/Genzen.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -276,14 +392,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.generator_rna" />
       <item index="1" class="java.lang.String" itemvalue="Python.random" />
+      <item index="2" class="java.lang.String" itemvalue="Python.generator_dna-rna" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Genzen" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.generator_rna" />
-        <item index="1" class="java.lang.String" itemvalue="Python.random" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.Genzen" />
+        <item index="1" class="java.lang.String" itemvalue="Python.generator_dna-rna" />
+        <item index="2" class="java.lang.String" itemvalue="Python.generator_rna" />
+        <item index="3" class="java.lang.String" itemvalue="Python.random" />
       </list>
     </recent_temporary>
   </component>
@@ -305,9 +425,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1294" height="1577" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27073553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27073553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992503" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -338,7 +458,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -351,14 +473,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/test1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/t">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -398,10 +512,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/generator_rna.py">
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/rna_get_1">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/rna_gen_1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/generator_dna.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3159">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/t">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3825">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/Labeler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/pcsd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/t1_fwd_dna">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/t1_fwd_rna">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/t1_rev_rna">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/t1_rev_dna">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PureConceptSequencing/Genzen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="233" column="30" selection-start-line="233" selection-start-column="30" selection-end-line="233" selection-end-column="30" />
           <folding />
         </state>
       </provider>
