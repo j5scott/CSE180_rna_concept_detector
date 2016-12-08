@@ -1,1 +1,5 @@
-# CSE180_rna_concept_detector
+Main Project:  pcsd.py
+
+Test Data Generator: Genzen.py
+
+Helper: Labler.py
