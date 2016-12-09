@@ -197,50 +197,64 @@ class C:
 
 
 #functions
-    def analyseSeqFile(self, brain):
-        print '1'
+
+    #TODO:  have the debug be a list of allowable print statements
+    def analyseSeqFile(self, brain, debug):
+        #print '1'
         brain.H = []
 
         filename = raw_input('Enter filename to analyze: ')
         input = [line.rstrip('\n') for line in open(filename, 'r')]
         input = ''.join(input)
 
-        buffer = input[0]
-        for i in range(1,len(input)):
-            if input[i] == 'A' or 'U' or 'G' or 'C' or 'T':
 
+        stateConcepts = []
 
-                while input[i] == buffer[0] and i < len(input)-1:
-                    buffer += input[i]
+        allowed = 'AUGCTaugct'
+
+        i = 0
+        while input[i] not in allowed: i += 1
+        j = i
+
+        buffer = ''
+        while i < len(input):
+            start = True
+            if input[i] in allowed:
+                buffer+=input[j]
+                while( i+1 < len(input)-1 and input[i+1] == input[j]):
                     i += 1
+                    buffer += input[i]
+                j = i = i + 1
+                stateConcepts.append(buffer)
+                buffer = ''
 
-                brain.observe(brain,buffer)
-                brain.lastStim = buffer
-                buffer = input[i]
+        for concept in stateConcepts:
+            brain.observe(brain,concept)
+            brain.lastStim = concept
 
-        if len(brain.H) > 1:
-            print 'H:',
-            for i in range(len(brain.H)): print brain.H[i].C,
-            # print 'AdjacentConcats: '.join(brain.adjacentConcats(brain))
-        print '\nS: '.join(brain.S.keys())
-        print '\nK: '.join(brain.K.keys())
-        print 'H: '.join(c.C for c in brain.H)
+        # if len(brain.H) > 1:
+        #     print 'H:',
+        #     for i in range(len(brain.H)): print brain.H[i].C,
+        #     # print 'AdjacentConcats: '.join(brain.adjacentConcats(brain))
+        # print '\nS: '.join(brain.S.keys())
+        # print '\nK: '.join(brain.K.keys())
+        # print 'H: '.join(c.C for c in brain.H)
 
 
 
 
     def recent(self,brain):
-        print '2'
+        #print '2'
         if len(brain.H) >= 2: return brain.H[-2]
         else: return ''
 
     def holding(self,brain):
-        print '3'
+        #print '3'
         if len(brain.H) >= 1: return brain.H[-1]
 
 
     def merge(self,brain):
-        print '4'
+        #print '4'
         #prerequisite to merging - otherwise just letting observe append
         if len(brain.H) >= 2:
 
@@ -273,7 +287,7 @@ class C:
 
     #all adjacent concats
     def adjacentConcats(self,brain):
-        print '5'
+        #print '5'
         if len(brain.H)>1:
             ac = []
             for i in range(0,len(brain.H)-1):
@@ -284,12 +298,12 @@ class C:
         else: return []
 
     def isKnown(self,brain,c):
-        print '6'
+        #print '6'
         if c in brain.K.keys(): return True
         return False
 
     def lastC(self,brain):
-        print '7'
+        #print '7'
         return brain.lastStim
 
 
@@ -299,7 +313,7 @@ class C:
             or generate then
     '''
     def recordStimulus(self,brain,c):
-        print '8'
+        #print '8'
         if brain.K.has_key(c):
             brain.S[c]+=1
         else:
@@ -313,7 +327,7 @@ class C:
 
     #link current to recent's followers and recent to current's predecessors
     def link(self,brain,recent,holding):
-        print '9'
+        #print '9'
         print'linking: ' + holding.C + ' and ' + recent.C
 
         if recent.F.has_key(holding.C): recent.F[holding.C]+=1
@@ -321,47 +335,47 @@ class C:
 
         if holding.P.has_key(recent.C): holding.P[recent.C]+=1
 
-        print 'H: ',
+        #print 'H: ',
         for i in range(len(brain.H)):
             print brain.H[i].C,
         print'\n'
 
     def matchP(self,brain,recent,holding):
-        print '10'
+        #print '10'
         if brain.K[holding.C] in brain.H[0:len(brain.H)-2]\
                 and holding.P.has_key(recent.C):
             return True
         return False
 
     def matchF(self,brain,recent,holding):
-        print '12'
+        #print '12'
         if brain.K[recent.C] in brain.H[0:len(brain.H)-2] \
                 and recent.F.has_key(holding.C):
             return  True
         return False
 
     def inTail(self,brain,subject,collection):
-        print '13'
-        print 'checking if '+subject+' at TAIL of '+collection
+        #print '13'
+        #print 'checking if '+subject+' at TAIL of '+collection
         #length of subject
         l = len(subject)
         if subject == collection[-l:]: return True
         return False
 
     def inHead(self,brain,subject,collection):
-        print '14'
-        print 'checking if '+subject+' at HEAD of '+collection
+        #print '14'
+        #print 'checking if '+subject+' at HEAD of '+collection
         l = len(subject)
         if subject == collection[0:l]: return True
         return False
 
 
     def observe(self,brain,c):
-        print '15'
+        #print '15'
         if not brain.K.has_key(c): holding = brain.recordStimulus(brain,c)
-        else: holding = brain.K[c]
-
-        brain.H.append(holding)       # add to list, may merge
+        else:
+            holding = brain.K[c]
+            brain.H.append(holding)       # add to list, may merge
 
         brain.merge(brain)
 
@@ -372,11 +386,11 @@ class C:
 
     # initialize self
     def _init(self):
-        print '16'
+        #print '16'
         self.identity = id(self)
 
     def allchars(self,brain,r, c):
-        print '17'
+        #print '17'
         ok = True
         for e in r:
             if e != c: ok = False
@@ -385,20 +399,20 @@ class C:
 
     # given novel stimulus, conceive a concept
     def conceive(self,brain,s):
-        print '18'
+        #print '18'
         newConcept = C()
         newConcept.C = s;
         return newConcept
 
+    def tests(self,brain,test):
+        #write tests here for each function,
 
-
-
-
+        0
 
 #chicken concept holds the functionality to analyze a sequence file
 #  analyseSequence creates a concept 'brain' that tracks all the machine learns
 chicken = C()
 
 #chicken will ask you which file to analyse
-chicken.analyseSeqFile(chicken)
+chicken.analyseSeqFile(chicken,debug = True)
 
