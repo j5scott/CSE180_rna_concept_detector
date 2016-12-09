@@ -1,7 +1,4 @@
 '''
-
-    Pure Concept Framework Pattern Detector
-
     PCFPD: Version 1.0:
         A one pass analyzer through genomic sequences to identify all
         interesting candidates for motifs and proteins
@@ -18,16 +15,8 @@
              that are similar to each other and within a small tolerance
              are of the same size are very interesting to bioinformaticians
 
-    Motivation:
 
-
-    Example Sequence Learning
-    [...] - > pattern seen before, merge new
-    <...> - > where it is seen in history
-    *...* - > what got merged last time, how it looks now
-    (...) - > more than one precede or follow
-
-workspace:
+workspace just:
 
 Too dark for paper thinking so i'm experimenting here
 
