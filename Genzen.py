@@ -34,7 +34,7 @@ print('\nGenZen: toy dna and rna pseuedosequence generator, v1.0\n'
 
 # name the output file that will be appended by [fwd | rev] and [dna | rna]
 file_output_name = raw_input('\nName for output file set: ')
-output_file1 = open(file_output_name+'_fwd_rna','w')
+output_file1 = open(file_output_name+'-fRNA','w')
 
 #occurence of base chars only appear once
 A = 'A'
@@ -190,6 +190,7 @@ while rna_seq_triplet_length < triplet_stop_threshold:
             sel = random.randint(0,3)
             rna_seq += base_rna[sel]
 
+#files should not be one long ass line, 60 chars/line good
 def sanifyOutput(outFile):
     withCR = ''
     for i in range(1,len(outFile)-1):
@@ -221,7 +222,7 @@ for c in rna_seq:
     if(c == U): dna_seq_fwd += T
     else: dna_seq_fwd += c
 
-output_file3 = open(file_output_name+'_fwd_dna','w')
+output_file3 = open(file_output_name+'-fDNA','w')
 output_file3.write(sanifyOutput(dna_seq_fwd))
 output_file3.close()
 
@@ -232,7 +233,12 @@ for c in rev_seq:
     if(c == U): dna_seq_rev += T
     else: dna_seq_rev += c
 
-output_file4 = open(file_output_name+'_rev_dna','w')
+output_file4 = open(file_output_name+'-rDNA','w')
 output_file4.write(sanifyOutput(dna_seq_rev))
 output_file4.close()
+
+#12-10-16:
+#add output file for generated strings, line by line
+output_file1
+
 

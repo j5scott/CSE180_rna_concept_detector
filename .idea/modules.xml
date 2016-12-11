@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/PycharmProjects/PureConceptSequencing/.idea/PureConceptSequenceDetection.iml" filepath="$USER_HOME$/PycharmProjects/PureConceptSequencing/.idea/PureConceptSequenceDetection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PureConceptSequenceDetection.iml" filepath="$PROJECT_DIR$/.idea/PureConceptSequenceDetection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PureConceptSequencing.iml" filepath="$PROJECT_DIR$/.idea/PureConceptSequencing.iml" />
     </modules>
   </component>
 </project>
