@@ -1,76 +1,18 @@
-# coding=utf-8
-#pcfpd.py
-"""
-    Jeremy Scott
-    A11180142
-    Final Project  For CSE180@UCSD~(Fall,2016)
-
-    Proposal: build NN that learns all the patterns / motifs in sequence,
-              - adding : generate sequences drawn from same probability
-                         distribution of patterns as input file
-
-    Rest of documentation + notes/playground @ bottom of this file
-"""#############################################################################
-#                                                                              #
-#                           Class C : A 'Concept'                              #
-#                           Author: Jeremy Scott                               #
-#                                                                              #
-#       Q: WHAT DO ALL OBSERVABLE CONCEPTS HAVE IN COMMON?                     #
-#       A: POTENTIAL FOR INTEGRATION INTO OBSERVERS BRAIN AS A CONCEPT.        #
-#                                                                              #
-#        ...including, brains, stories, gods, ToM and Meta-cognition...        #
-#           If you than with with or about it, it is a concept.                #
-#           If you employ it to think for you, it is a concept agent:          #
-#           a living concept holding it's own perspective based                #
-#           on its experience                                                  #
-#                                                                              #
-#           Assumptions:                                                       #
-#                                                                              #
-#           *  stimuli have direct connection to brain neurons                 #
-#                                                                              #
-#           *  brains do not have a special place where all of their           #
-#              expectations and predictive abilities lie.                      #
-#                                                                              #
-#           *  neurons learn to expect the stimuli that typically              #
-#              follow.  neurons link expectation _across_ sense type           #
-#                                                                              #
-#------------------------------------------------------------------------------#
+#   pcfpd.py
+#
+#   Jeremy Scott
+#   A11180142
+#   Final Project  For CSE180@UCSD~(Fall,2016)
+#   Proposal:       build NN that learns all the patterns / motifs in sequence,
+#                   adding soon: generate sequences drawn from same probability
+#                   distribution of patterns as input file also toy generator#
 class C:
-    locs = []       #locations an employer of this concept tells it they are
-
-    """* A 'Concept' in all it's Contexts *"""#
+    #
     H = []          # History of concepts this concept/brain observed
-    # * all dictionaries accessed by string key * #
-    # dictionaries
     S  = {}         # Stimulus: {string:count}
-    Si = {}         # Stimuli: {label: StimulusTypes={}} --when more senses
-                    # ie: other brains sensor readings/ labeled sense
-                    # files
     K  = {}         # Known concepts: {conceptstring : C}
-    Y  = {}         # Policy's
-    # ToDo- multiple labeled types of histories and knowns
-    Hs = {}         # Histories: labeled, ie: brain.Hs['brain2'] -> brain2.H
-    Ks = {}         # Knowns: labeled knowledge dictionaries
-    # ToDo- control mechanisms
-    Rs = {}         # Recognize: Who I can send/receive from
-    As = {}         # Allow:     Who can request from or change this
-    Ts = {}         # Targets:   Who this concept can control
-    T = ''          # Target for my next action
-    A = ''          # Some co
-    R = ''          # When only one other concept has communication with this
-
-    # dictionaries
     P = {}          # predescesorsofthisconcept{predkey:countvalue,...}
-    F = {}          # followersofthisconcept{followerkey:countvalue,...}
-
-    # Controlling other known brains: access map, brains employed. (ie: sub-proc)
-    E = {}  # ToDo- Registered Employees (employees)
-    I = {}  # Todo- Who is now here?
-            #       'I' as in 'in' me ,rather than 'have' ie: agents can be
-            #       a 'firm'-> can make legal agent-like decisions, and have
-            #       human agent units inside it
-
-    # strings:      strings are keys for use in dictionaries
+    F = {}
     C = ''          # label for this concept?
 
     """chars never duplicated, live in same static/globally (in python)
@@ -125,19 +67,19 @@ class C:
         for concept in stateConcepts:
             brain.observe(brain, concept)
 
-
+    # EFFECTIVELY shuffles output
     #Given a Sequence File of genome, dna / rna, learn all patterns
     def analyzeCharacterSequence3(self, brain, allowedCharacters):
 
         #hiring 3 barnacles to oberve nucleotide sequences starting at
         #first+[0|1|2] to see if , don't worry, barnacle is just a barnacle
 
-        barnacle1 = C()
-        barnacle1.myname = 'barnacle1'
-        barnacle2 = C()
-        barnacle2.myname = 'barnacle2'
-        barnacle3 = C()
-        barnacle3.myname = 'barnacle3'
+        # barnacle1 = C()
+        # barnacle1.myname = 'barnacle1'
+        # barnacle2 = C()
+        # barnacle2.myname = 'barnacle2'
+        # barnacle3 = C()
+        # barnacle3.myname = 'barnacle3'
 
 
 
@@ -369,7 +311,7 @@ class C:
         # else print
 
     def printHistory(self,brain):
-        print 'HistoryList('+brain.myname+')\n'+\
+        return 'HistoryList('+brain.myname+')\n'+\
               '\n'.join([h.C for h in brain.H])
 
     #print count and stimulus                 acc: brain.Keys()
@@ -400,26 +342,66 @@ class C:
         print 'Followers(' + concept.C + '): \n' + \
               '\n'.join([f for f in concept.F])
 
+    def sanifyOutput(outFile):
+        withCR = ''
+        for i in range(1,len(outFile)-1):
+            withCR += outFile[i-1]
+            if(i%60 ==0): withCR += '\n'
+        return withCR
 
 chickenBrain = C()
-chickenBrain.myname = 'WickedChickenEnemy'
+chickenBrain.myname = '0' #0, the most powerful cocept in the universe
+    #provably the most stable, harmful, and helpful of the numbers-
+    #on top, can drive any concept to zero, like removing a dimension
 
 #chicken will ask you which file to analyse
 chickenBrain.analyzeCharacterSequence(chickenBrain,'AUGTCaugtc')
 
-chickenBrain.printHistory(chickenBrain)
-chickenBrain.printStims(chickenBrain)
+
 chickenBrain.printPall(chickenBrain)
-chickenBrain.printFall(chickenBrain)
 
-# Output File: Known K
-# output_known = open(filename + brain.C, 'w')
 
-# Output File: History H
-# output_history = open(filename + brain.C , 'w')
 
-# output File: Counts
-# output_counts = open(filename+)
+f1 = raw_input("name the output file.  ")
+f2= raw_input("name the output file.  ")
+f3= raw_input("name the output file.  ")
+f4= raw_input("name the output file.  ")
+
+
+output_known = chickenBrain.printStims(chickenBrain)
+
+
+
+output_history = chickenBrain.printHistory(chickenBrain)
+
+
+
+output_counts = chickenBrain.printStims(chickenBrain)
+ 
+output_foll = chickenBrain.printFall(chickenBrain)
+output_pred = chickenBrain.printPall(chickenBrain)
+
+
+output_known = open(f1+'K','w')
+output_known.write(chickenBrain.sanifyOutput(output_known))
+output_known.close()
+
+output_history = open(f2+'H','w')
+output_history.write(chickenBrain.sanifyOutput(output_history))
+output_history.close()
+
+
+output_foll = open(f3+'F','w')
+output_foll.write(chickenBrain.sanifyOutput(output_foll))
+output_foll.close()
+
+output_pred = open(f4+'P','w')
+output_pred.write(chickenBrain.sanifyOutput(output_pred))
+output_pred.close()
+
+
+
+
 
 '''
 
