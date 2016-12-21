@@ -68,7 +68,9 @@ For Erratum, E -> X indicates fix
   Have to build another Neural Network before midnight tonight (12-9)
   The report has tons of stuff I'd like to edit after an even better night's sleep
       
-   
+      
+UPDATE 12/21/2016:
+appologies if anyone has been waiting for an update on this, I'm still trying to finish NachOS, spend a few days finishing another NN project, and now christmas plans are taking time- still intend to work on this! its on my list
             
             
             
